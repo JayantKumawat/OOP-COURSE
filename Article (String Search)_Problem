@@ -1,0 +1,14 @@
+# OOP-COURSE
+def word_search(doc_list, keyword):
+    
+    my_list = []
+    for doc in doc_list:
+        curr_doc = doc.lower()
+        try:
+            curr_index = curr_doc.index(keyword.lower())
+            my_list.append(curr_index)
+        except:
+            my_list.append(None)
+    return my_list
+
+print(word_search(['The Learn Python Challenge Casino', 'They bought a car, and a horse', 'Casinoville?'], 'casino'))
