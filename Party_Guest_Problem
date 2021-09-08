@@ -1,0 +1,8 @@
+# OOP-COURSE
+guest = ["Hardik", "Rahul", "Rishab", " Mahi", "Raina", "Rahane"]
+num = len(guest)
+#print(num)
+i =(int)(num / 2) 
+for j in range (i, num-1):
+   print(guest[j]+ " is fashionably late")
+   j= j+1
