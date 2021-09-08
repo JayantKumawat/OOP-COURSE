@@ -1,0 +1,9 @@
+# OOP-COURSE
+BP = (float)(input("Enter the BP value :"))
+def cal():
+    DA = (float)((BP*40)/100)
+    HRA = (float)((BP*20)/100)
+    GP = (float)(DA + HRA + BP)
+    print("The value og GP is :")
+    print(GP)
+cal()  
