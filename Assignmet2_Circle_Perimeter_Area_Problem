@@ -1,0 +1,24 @@
+# OOP-COURSE
+import math 
+
+class circle():
+    def __init__(self, radius):
+        self.radius = radius
+   
+    def area(self):
+        return (math.pi * self.radius * self.radius)
+
+    def perimeter(self):
+        return (2* math.pi* self.radius)
+
+         
+c1 = circle(5)            
+
+print("Area of circle is:", c1.area())
+print("Perimeter of circle is :" , c1.perimeter())
+         
+c2 = circle(6)            
+
+print("Area of circle is:", c2.area())
+print("Perimeter of circle is :" , c2.perimeter())
+
