@@ -1,0 +1,64 @@
+# OOP-COURSE
+#Program-5
+class hospital:
+  count = 0
+  def __init__(self,name,date,symptoms,ol,discharge):
+    self.name=name
+    self.date=date
+    self.symptoms=symptoms
+    self.ol=ol
+    self.discharge=discharge
+    hospital.count=hospital.count+1
+
+  def severity(self,ol):
+    global gw,op
+    gw=0
+    op=0
+    if (ol<90):
+      op=op+1
+      print("Patient requires oxygen support")
+    else:
+      gw=gw+1
+
+  def displaynumber(self):
+    print("No. of patients requiring oxygen support:",op)
+
+  def generalward(self):
+    print("No. of patients in general war for observation:",gw)
+
+  def totalpatients(self):
+    print("Total no. of patients admitted:",hospital.count)
+
+print("Patient 1: ")
+name=input("Enter the name of patient: ")
+date=input("Enter the date of admission in the format DD/MM/YYYY: ")
+symptoms=input("Enter the symptoms: ")
+ol=float(input("Enter the oxygen level of the patient: "))
+discharge=input("Enter the date of discharge in the format DD/MM/YYYY: ")
+p1=hospital(name,date,symptoms,ol,discharge)
+p1.severity(ol)
+p1.displaynumber()
+p1.generalward()
+p1.totalpatients()
+print("Patient 2: ")
+name=input("Enter the name of patient: ")
+date=input("Enter the date of admission in the format DD/MM/YYYY: ")
+symptoms=input("Enter the symptoms: ")
+ol=float(input("Enter the oxygen level of the patient: "))
+discharge=input("Enter the date of discharge in the format DD/MM/YYYY: ")
+p2=hospital(name,date,symptoms,ol,discharge)
+p2.severity(ol)
+p2.displaynumber()
+p2.generalward()
+p2.totalpatients()
+print("Patient 3: ")
+name=input("Enter the name of patient: ")
+date=input("Enter the date of admission in the format DD/MM/YYYY: ")
+symptoms=input("Enter the symptoms: ")
+ol=float(input("Enter the oxygen level of the patient: "))
+discharge=input("Enter the date of discharge in the format DD/MM/YYYY: ")
+p3=hospital(name,date,symptoms,ol,discharge)
+p3.severity(ol)
+p3.displaynumber()
+p3.generalward()
+p3.totalpatients()
