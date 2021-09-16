@@ -1,0 +1,32 @@
+# OOP-COURSE
+class Faculty():
+    def __init__(self, name, EmpID, Branch, Salary):
+        self.name = name 
+        self.EmpID = EmpID
+        self.Branch = Branch
+        self.Salary = Salary
+
+
+    def Faculty_Details(self):
+        print("Name of employe is", self.name)
+        print("Id of employe", self.EmpID)
+        print("Branch of Employe is", self.Branch)
+        print("Salary of Employe is", self.Salary)
+
+F1 = Faculty('Ram', '20bcs01', 'CSE', '10000')
+F1.Faculty_Details()
+
+F2 = Faculty('Hari', '20bcs02', 'ECE', '30000')
+F2.Faculty_Details()
+
+F3 = Faculty('TOm', '20bcs02', 'DSAI', '30000')
+F3.Faculty_Details()
+
+F3 = Faculty('SAM', '20bcs03', 'CE', '40000')
+F3.Faculty_Details()
+
+F4 = Faculty('Prem', '20bcs04', 'B.TEc', '50000')
+F4.Faculty_Details()
+            
+        
+
