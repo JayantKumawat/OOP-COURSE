@@ -1,0 +1,11 @@
+# OOP-COURSE
+ class students: 
+    def _init_(self , Name , USN , marks):
+       self.Name = Name
+       self.USN = USN
+       self.marks = marks
+    def display(self):
+       print("Name of the students is {}\nphysics marks is :{}".format(self.Name,self.marks)) 
+ 
+ Vivek = students("Vivek", "yes" , 87)
+ Vivek.display()
